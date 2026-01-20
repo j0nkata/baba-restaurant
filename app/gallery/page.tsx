@@ -6,7 +6,8 @@ export default function GalleryPage() {
       <div className="container mx-auto">
         
         {/* Заглавие на страницата */}
-        <header className="mb-20 lg:ml-[10%]">
+        {/* ДОБАВЕНО: text-center (за мобилно) и lg:text-left (за десктоп) */}
+        <header className="mb-20 lg:ml-[10%] text-center lg:text-left">
           <p className="text-[#212121] uppercase tracking-[1em] text-[10px] font-bold opacity-40 mb-4">
             Визуална история
           </p>
