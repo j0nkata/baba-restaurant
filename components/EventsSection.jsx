@@ -20,8 +20,6 @@ export default function EventsSection() {
   }, []);
 
   return (
-    // ПРОМЯНА: py-20 (80px) задава равно отстояние отгоре и отдолу за мобилни устройства.
-    // Това увеличава леко пространството спрямо py-12, но е по-прибрано от оригиналното py-24.
     <section ref={sectionRef} className="relative z-50 bg-[#F5F2ED] py-20 lg:py-48 overflow-hidden">
       
       {/* ПАРАЛАКС ТЕКСТ */}
@@ -35,7 +33,6 @@ export default function EventsSection() {
       </div>
 
       <div className="container mx-auto px-6 lg:px-24">
-        {/* text-left (запазено) */}
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-32 lg:ml-[12%] relative z-20 text-left lg:text-left">
           
           {/* MEDIA SIDE - Видима само на десктоп */}
@@ -52,7 +49,6 @@ export default function EventsSection() {
           </div>
 
           {/* TEXT SIDE */}
-          {/* items-start (запазено) */}
           <div className="w-full lg:w-[50%] flex flex-col items-start lg:items-start">
             <h2 className="text-[#212121] uppercase tracking-[0.5em] lg:tracking-[0.8em] text-[10px] font-bold mb-6 lg:mb-8 opacity-40">
               Събития
@@ -64,7 +60,8 @@ export default function EventsSection() {
             </h3>
             
             <div className="space-y-6 lg:space-y-8 mb-10 lg:mb-16 max-w-lg">
-              <p className="text-[#212121]/70 text-[16px] lg:text-[17px] leading-relaxed italic border-l-0 lg:border-l-2 border-[#722F37]/20 lg:pl-8">
+              {/* ТУК СА ПРИЛОЖЕНИ НОВИТЕ СТИЛОВЕ: text-[12px] lg:text-[18px] font-light */}
+              <p className="text-[#212121]/70 text-[12px] lg:text-[18px] font-light italic leading-relaxed border-l-0 lg:border-l-2 border-[#722F37]/20 lg:pl-8">
                 В неделите <span className="text-[#722F37] font-bold mx-1 lg:mx-2 text-[18px] lg:text-[19px] not-italic tracking-wider">BABA</span> <br className="lg:hidden" /> затваря врати за широката публика.
               </p>
             </div>
